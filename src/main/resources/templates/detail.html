@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Car Details</title>
+</head>
+<body>
+<h1>Edit Car</h1>
+<a href="@/edit/${id}">Edit Car</a>
+
+<h1>Delete Car</h1>
+<a href="@/delete/${id}">Delete Car</a>
+
+<table>
+  <tr><td>ID:</td><td>${car.id}</td></tr>
+  <tr><td>Color:</td><td>${car.color}</td></tr>
+  <tr><td>Text:</td><td>${car.text}</td></tr>
+  <tr><td>Tank Volume:</td><td>${car.tankVolume}</td></tr>
+  <tr><td>Number of Seats:</td><td>${car.numberOfSeats}</td></tr>
+</table>
+
+</body>
+</html>

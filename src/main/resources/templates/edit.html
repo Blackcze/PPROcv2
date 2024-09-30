@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Car | Create Car</title>
+</head>
+<body>
+<h1>${text} : Edit Car : Create Car</h1>
+<form th:object="${car}" action="@{/save}" method="post">
+    License Plate Number: <input type="text" th:field="*{id}" readonly="${edit}"/>
+    <p/>
+    Color: <input type="text" th:field="*{color}"/>
+    <p/>
+    Tank Volume: <input type="text" th:field="*{tankVolume}"/>
+    <p/>
+    Number of Seats: <input type="text" th:field="*{numberOfSeats}"/>
+    <p/>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
